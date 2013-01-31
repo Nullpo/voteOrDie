@@ -1,5 +1,0 @@
-package org.vote
-
-case class Vote(elem: AnyRef) {
-	var who = elem
-}

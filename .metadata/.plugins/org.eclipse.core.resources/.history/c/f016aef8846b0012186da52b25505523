@@ -1,5 +1,0 @@
-package org.vote
-
-object Plurality {
-
-}
