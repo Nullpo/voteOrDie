@@ -1,0 +1,14 @@
+package org.vote
+
+object Prog {
+	def main(args: Array[String]) {
+        val yo = "yo";
+        val tu = "tu";
+        val el = "el";
+        val vote1 = Vote(yo)
+        
+        Box.votes += vote1
+        
+        
+    }
+}

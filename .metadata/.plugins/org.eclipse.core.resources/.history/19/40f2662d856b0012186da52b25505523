@@ -1,0 +1,15 @@
+package org.vote
+
+/* Plurality voting system algorithm.
+ * 
+ * Plurality voting system is a single-winner voting system, 
+ * the winner is the candidate with more votes.
+ * This is a synonym of:
+ *  - Single Majority
+ *  - Relative Majority
+ *  - Common Majority
+ *  - Ordinary Majority
+ */
+object Plurality {
+
+}

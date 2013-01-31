@@ -1,0 +1,8 @@
+package org.vote
+
+object Box {
+	var votes:List[Vote] = List[Vote]()
+	var recountAlgorytm: () => List[AnyRef] = null
+	
+	
+}

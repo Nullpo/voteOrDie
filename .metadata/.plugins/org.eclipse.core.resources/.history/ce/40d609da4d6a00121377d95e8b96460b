@@ -1,0 +1,6 @@
+package org.vote
+
+object Box {
+	var votes:List[Vote] = null
+	
+}

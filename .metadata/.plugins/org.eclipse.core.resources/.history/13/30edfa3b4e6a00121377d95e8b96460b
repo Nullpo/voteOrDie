@@ -1,0 +1,11 @@
+package org.vote
+
+object Prog {
+	def main(args: Array[String]) {
+        
+    }
+}
+
+object BoxAlgorytm{
+  
+}

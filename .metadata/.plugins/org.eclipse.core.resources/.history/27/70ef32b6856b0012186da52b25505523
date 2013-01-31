@@ -1,0 +1,13 @@
+package org.vote
+
+object Box {
+  var votes: List[Vote] = List[Vote]()
+  var recountSystem: RecountSystem = null
+
+  def addVote(vote: Vote) {
+    this.votes = vote :: votes
+  }
+  
+  
+
+}

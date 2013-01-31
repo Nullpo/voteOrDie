@@ -1,0 +1,20 @@
+package org.vote
+
+object Prog {
+	def main(args: Array[String]) {
+        val yo = "yo1";
+        val tu = "tu2";
+        val el = "el3";
+        val vote1 = Vote(yo)
+        val vote2 = Vote(tu)
+        val vote3 = Vote(el)
+        val vote4 = Vote(tu)
+        
+        
+        
+        println(Box.votes)
+        println(Box.countOcurrences)
+        println ("THe winner is!" + Box.theWinnerIs)
+        
+    }
+}

@@ -1,0 +1,9 @@
+package org.vote
+
+trait RecountSystem {
+ // Plurality voting system
+  
+  def theWinnerIs() : (AnyRef,Integer) 
+  def votationResults() : List[(AnyRef,Integer)]
+  def countOcurrencesOf(E:Vote, list:List[_],Count:Integer) : (AnyRef,Integer) 
+}

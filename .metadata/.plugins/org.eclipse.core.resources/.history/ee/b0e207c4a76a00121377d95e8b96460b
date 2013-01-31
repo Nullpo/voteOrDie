@@ -1,0 +1,14 @@
+package org.vote
+
+object Box {
+	var votes:List[Vote] = List[Vote]()
+	var recountAlgorytm: List[Vote] => List[AnyRef] = null
+	def addVote(vote : Vote){
+	  this.votes = vote :: votes
+	}
+	def theWinnerIs(){
+	  votes foldLeft(Map[AnyRef,Int]() withDefaultValue 0){
+		  (m,x) => v m (x->(1+m(x)))
+	  }
+	}
+}

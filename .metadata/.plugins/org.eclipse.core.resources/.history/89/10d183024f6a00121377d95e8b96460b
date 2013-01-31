@@ -1,0 +1,12 @@
+package org.vote
+
+object Prog {
+	def main(args: Array[String]) {
+        val yo = "yo";
+        val tu = "tu";
+        val el = "el";
+        
+        Box.votes.aggregate(Vote(yo))
+        
+    }
+}

@@ -1,0 +1,19 @@
+package org.vote
+
+object Box {
+	var votes:List[Vote] = List[Vote]()
+	var recountAlgorytm: List[Vote] => List[AnyRef] = null
+	def addVote(vote : Vote){
+	  this.votes = vote :: votes
+	}
+	def theWinnerIs(){
+	  
+	  
+	  
+	  
+	}
+	
+	def theWinnerIs(head:Vote, tail:List[Vote]){
+	  
+	}
+}

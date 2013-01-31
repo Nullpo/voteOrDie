@@ -1,0 +1,36 @@
+package org.vote
+
+object Prog {
+  def main(args: Array[String]) {
+    val yo = "yo1";
+    val tu = "tu2";
+    val el = "el3";
+    val vote1 = Vote(yo)
+    val vote2 = Vote(tu)
+    val vote3 = Vote(el)
+    val vote4 = Vote(tu)
+    
+    Box.plurality() // Sets the vote system
+    
+    Box.addVote(vote2)
+
+    Box.addVote(vote4)
+    Box.addVote(vote1)
+    Box.addVote(vote1)
+    Box.addVote(vote1)
+    Box.addVote(vote3)
+    Box.addVote(vote3)
+    Box.addVote(vote1)
+    Box.addVote(vote1)
+    Box.addVote(vote1)
+    Box.addVote(vote3)
+    Box.addVote(vote1)
+    Box.addVote(vote1)
+    Box.addVote(vote3)
+
+    println(Box.votes)
+    println(Box.votationResults)
+    println("THe winner is!" + Box.theWinnerIs)
+
+  }
+}

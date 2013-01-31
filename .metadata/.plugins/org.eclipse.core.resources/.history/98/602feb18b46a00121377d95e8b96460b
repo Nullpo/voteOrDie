@@ -1,0 +1,26 @@
+package org.vote
+
+object Box {
+	var votes:List[Vote] = List[Vote]()
+	var recountAlgorytm: List[Vote] => List[AnyRef] = null
+	def addVote(vote : Vote){
+	  this.votes = vote :: votes
+	}
+	
+	def countFirstOcurrence() : collection.Set = {
+	  val head :: tail = votes
+	  return (collection.Set.empty[Vote] ++ votes).map(
+	    x => countOcurrencesOf(x,votes,0)
+	  )
+	}
+	
+	def countOcurrencesOf(E:Vote, list:List[Vote],Count:Integer) : (Vote,Integer) = {
+	  // obtengo si se repitio este elemento esta vez
+	  return list match {
+	    case cabeza :: t if cabeza == E  => countOcurrencesOf(E,t,Count +1)
+	    case cabeza :: t => countOcurrencesOf(E,t,Count)
+	    case List() => (E,Count)
+	  }
+	}
+	
+}

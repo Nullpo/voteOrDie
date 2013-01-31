@@ -1,0 +1,7 @@
+package org.vote
+
+trait RecountSystem {
+ // Plurality voting system
+  
+  def theWinnerIs() : (AnyRef,Integer) 
+}
